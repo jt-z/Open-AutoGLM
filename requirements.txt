@@ -4,8 +4,10 @@ openai>=2.9.0
 # For Model Deployment
 
 # sglang>=0.5.6.post1
-# transformers>=5.0.0rc0
-# vllm>=0.12.0
+# transformers>=5.0.0rc0 
+vllm>=0.12.0
+# vllm和transformers这两个包版本会冲突，因此只安装了vllm
+# pip install -r  /home/ksa/Devtemp/Open-AutoGLM/requirements.txt -i  https://pypi.mirrors.ustc.edu.cn/simple/
 
 # Optional: for development
 # pytest>=7.0.0
