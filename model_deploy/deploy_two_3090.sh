@@ -1,0 +1,13 @@
+python3 -m vllm.entrypoints.openai.api_server \
+  --served-model-name autoglm-phone-9b \
+  --model zai-org/AutoGLM-Phone-9B \
+  --tensor-parallel-size 2 \
+  --trust-remote-code \
+  --allowed-local-media-path / \
+  --mm-encoder-tp-mode data \
+  --mm_processor_cache_type shm \
+  --mm_processor_kwargs "{\"max_pixels\":5000000}" \
+  --max-model-len 25480 \
+  --chat-template-content-format string \
+  --limit-mm-per-prompt "{\"image\":10}" \
+  --port 8000
