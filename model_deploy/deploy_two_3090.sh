@@ -1,6 +1,6 @@
 python3 -m vllm.entrypoints.openai.api_server \
   --served-model-name autoglm-phone-9b \
-  --model zai-org/AutoGLM-Phone-9B \
+  --model /home/ksa/.cache/modelscope/hub/models/ZhipuAI/AutoGLM-Phone-9B \
   --tensor-parallel-size 2 \
   --trust-remote-code \
   --allowed-local-media-path / \
